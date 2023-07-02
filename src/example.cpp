@@ -7,10 +7,12 @@ int main(){
     h("\\",5,3);
     h("|",5,4);
     h("*",5,5);
-    int a;
-    cin>>a;
+    print("Great ECPPH!",4,true);
+    int x;
+    cin>>x;
     print("Hello",1,false);
     print("World!",6,true);
+    sleep(3);
     error();
     return 0;
 }

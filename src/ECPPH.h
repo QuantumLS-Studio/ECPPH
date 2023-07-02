@@ -12,9 +12,9 @@ void error(){
 }
 
 void clear(int i){
-    if(i=='0')
+    if(i==0)
         system("clear");
-    else if(i=='1')
+    else if(i==1)
         system("CLS");
     else
         error();
@@ -75,4 +75,8 @@ void h(const char S[],int l,int c){
         }
         print(S,c,true);
     }
+}
+
+void s(const char T[]){
+    cout<<" - "<<T<<endl;
 }

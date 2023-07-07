@@ -20,43 +20,43 @@ void clear(int i){
         error();
 }
 
-void print(const char T[],int color,bool i){
+void print(const char T[],string color,bool i){
     if(i==true){
-        if(color==0)
+        if(color=="NULL")
             cout<<T<<"\n";
-        else if(color==1)
+        else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m\n";
-        else if(color==2)
+        else if(color=="yellow")
             cout<<"\033[33m"<<T<<"\033[0m\n";
-        else if(color==3)
+        else if(color=="green")
             cout<<"\033[32m"<<T<<"\033[0m\n";
-        else if(color==4)
+        else if(color=="teal")
             cout<<"\033[36m"<<T<<"\033[0m\n";
-        else if(color==5)
+        else if(color=="blue")
             cout<<"\033[34m"<<T<<"\033[0m\n";
-        else if(color==6)
+        else if(color=="purple")
             cout<<"\033[35m"<<T<<"\033[0m\n";
-        else if(color==7)
+        else if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m\n";
         else
             error();
     }
     else if(i==false){
-        if(color==0)
+        if(color=="NULL")
             cout<<T;
-        else if(color==1)
+        else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m";
-        else if(color==2)
+        else if(color=="yellow")
             cout<<"\033[33m"<<T<<"\033[0m";
-        else if(color==3)
+        else if(color=="green")
             cout<<"\033[32m"<<T<<"\033[0m";
-        else if(color==4)
+        else if(color=="teal")
             cout<<"\033[36m"<<T<<"\033[0m";
-        else if(color==5)
+        else if(color=="blue")
             cout<<"\033[34m"<<T<<"\033[0m";
-        else if(color==6)
+        else if(color=="purple")
             cout<<"\033[35m"<<T<<"\033[0m";
-        else if(color==7)
+        else if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m";
         else
             error();
@@ -65,15 +65,15 @@ void print(const char T[],int color,bool i){
         error();
 }
 
-void h(const char S[],int l,int c){
+void h(const char S[],int l,string color){
     if(l<=0)
         error();
     else{
         while(l>1){
-            print(S,c,false);
+            print(S,color,false);
             l--;
         }
-        print(S,c,true);
+        print(S,color,true);
     }
 }
 

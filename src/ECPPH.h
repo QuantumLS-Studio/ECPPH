@@ -8,7 +8,7 @@ using namespace std;
 //Easy C++ Head
 
 void error(){
-    cout<<"\033[1,31m"<<"ERROR!"<<"\033[0m\a\n";
+    cout<<"\033[1,31mERROR!\033[0m\a\n";
 }
 
 void clear(int i){
@@ -22,7 +22,7 @@ void clear(int i){
 
 void print(const char T[],string color,bool i){
     if(i==true){
-        if(color=="NULL")
+        if(color=="no")
             cout<<T<<"\n";
         else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m\n";
@@ -42,7 +42,7 @@ void print(const char T[],string color,bool i){
             error();
     }
     else if(i==false){
-        if(color=="NULL")
+        if(color=="no")
             cout<<T;
         else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m";

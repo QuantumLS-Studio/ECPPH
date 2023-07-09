@@ -12,6 +12,6 @@
 
 以下的这些词已被“ECPPH.h”定义，您应该万分注意！
 
-"print", "error", "clear", "h", "s"
+"print", "error", "clear", "line", "dash", "boxout"
 
 如有冲突，可改

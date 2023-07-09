@@ -80,3 +80,12 @@ void h(const char S[],int l,string color){
 void s(const char T[]){
     cout<<" - "<<T<<endl;
 }
+
+void boxc(const char* T){
+    string t;
+    t=T;
+    int size=t.size();
+    h("-",size+6,"white");
+    cout<<"|"<<"  "<<T<<"  "<<"|"<<endl;
+    h("-",size+6,"white");
+}

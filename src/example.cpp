@@ -9,9 +9,11 @@ int main(){
     h("*",5,"teal");
     print("Great ECPPH!","blue",true);
     int x;
+    print("Please enter any words","purple",true);
     cin>>x;
     print("Hello","red",false);
     print("World!","blue",true);
+    boxc("Hello ECPPH!");
     sleep(3);
     error();
     return 0;

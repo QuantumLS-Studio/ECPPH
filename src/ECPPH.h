@@ -65,7 +65,7 @@ void print(const char T[],string color,bool i){
         error();
 }
 
-void h(const char S[],int l,string color){
+void line(const char S[],int l,string color){
     if(l<=0)
         error();
     else{
@@ -77,15 +77,12 @@ void h(const char S[],int l,string color){
     }
 }
 
-void s(const char T[]){
+void dash(const char T[]){
     cout<<" - "<<T<<endl;
 }
 
 void boxc(const char* T){
-    string t;
-    t=T;
-    int size=t.size();
-    h("-",size+6,"white");
-    cout<<"|"<<"  "<<T<<"  "<<"|"<<endl;
-    h("-",size+6,"white");
+    line("-",sizeof(T)+4,"white");
+    cout<<"| "<<T<<" |"<<endl;
+    line("-",sizeof(T)+4,"white");
 }

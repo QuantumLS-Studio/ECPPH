@@ -82,7 +82,7 @@ void dash(const char T[]){
 }
 
 void boxout(const char T[],int l){
-    if(l==0||l<0){
+    if(l<=0){
         error();
     }
     else{

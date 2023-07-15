@@ -1,5 +1,8 @@
 # ECPPH
 
-一个对C++加了许多辅助功能的C++头文件
+[English](/README.md)
+[简体中文](/README_zh.md)
 
-更多信息请查阅"doc"下的文档
+A head file to make C++ develop easy.
+
+For more information, please look up the texts in the "doc" dir.

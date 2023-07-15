@@ -5,7 +5,6 @@
 #include <ctime>
 #include <chrono>
 using namespace std;
-//Easy C++ Head
 
 void error(){
     cout<<"\033[1,31mERROR!\033[0m\a\n";

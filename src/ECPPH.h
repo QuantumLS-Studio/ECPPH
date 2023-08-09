@@ -81,13 +81,13 @@ void dash(const char T[]){
     cout<<" - "<<T<<endl;
 }
 
-void boxout(const char T[],int l=strlen(T)){
-    if(l<=0){
+void boxout(const char T[]){
+    int l=strlen(T);
+    if(l <= 0)
         error();
-    }
     else{
-        line("-",l,"white");
+        line("-",l+4,"white");
         cout<<"| "<<T<<" |"<<endl;
-        line("-",l,"white");
+        line("-",l+4,"white");
     }
 }

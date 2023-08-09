@@ -1,4 +1,4 @@
-#include "ECPPH.h"
+#include "../ECPPH.h"
 
 int main(){
     clear(0);
@@ -8,7 +8,7 @@ int main(){
     line("|",5,"green");
     line("*",5,"teal");
     print("Great ECPPH!","blue",true);
-    boxout("ECPPH",9);
+    boxout("ECPPH");
     print("Please enter any words","purple",true);
     string x;
     cin>>x;

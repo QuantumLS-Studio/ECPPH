@@ -4,6 +4,7 @@
 #include <unistd.h>
 #include <ctime>
 #include <chrono>
+#include <string.h>
 using namespace std;
 
 void error(){
@@ -80,7 +81,7 @@ void dash(const char T[]){
     cout<<" - "<<T<<endl;
 }
 
-void boxout(const char T[],int l){
+void boxout(const char T[],int l=strlen(T)){
     if(l<=0){
         error();
     }

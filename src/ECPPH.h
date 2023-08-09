@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <ctime>
 #include <chrono>
-#include <string.h>
+#include <cstring>
 using namespace std;
 
 void error(){
@@ -22,7 +22,7 @@ void clear(int i){
 
 void print(const char T[],string color,bool i){
     if(i==true){
-        if(color=="no")
+        if(color=="none")
             cout<<T<<"\n";
         else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m\n";
@@ -42,7 +42,7 @@ void print(const char T[],string color,bool i){
             error();
     }
     else if(i==false){
-        if(color=="no")
+        if(color=="none")
             cout<<T;
         else if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m";
@@ -65,7 +65,7 @@ void print(const char T[],string color,bool i){
         error();
 }
 
-void line(const char S[],int l,string color){
+void line(const char S[],int l,string color,bool i){
     if(l<=0)
         error();
     else{
@@ -73,7 +73,7 @@ void line(const char S[],int l,string color){
             print(S,color,false);
             l--;
         }
-        print(S,color,true);
+        print(S,color,i);
     }
 }
 
@@ -81,13 +81,19 @@ void dash(const char T[]){
     cout<<" - "<<T<<endl;
 }
 
-void boxout(const char T[]){
+void boxout(const char T[],string bc,string tc,bool i){
     int l=strlen(T);
     if(l <= 0)
         error();
     else{
-        line("-",l+4,"white");
-        cout<<"| "<<T<<" |"<<endl;
-        line("-",l+4,"white");
+        print("+",bc,false);
+        line("-",l+2,bc,false);
+        print("+",bc,true);
+        print("| ",bc,false);
+        print(T,tc,false);
+        print(" |",bc,true);
+        print("+",bc,false);
+        line("-",l+2,bc,false);
+        print("+",bc,i);
     }
 }

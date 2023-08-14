@@ -7,74 +7,68 @@
 #include <cstring>
 using namespace std;
 
-void error(){
-    cout<<"\033[1,31mERROR!\033[0m\a\n";
+int error(){
+    printf("\033[1,31mERROR!\033[0m\a\n");
+    return 1;
 }
 
 void clear(int i){
     if(i==0)
         system("clear");
-    else if(i==1)
+    if(i==1)
         system("CLS");
-    else
-        error();
+    error;
 }
 
 void print(const char T[],string color,bool i){
     if(i==true){
         if(color=="none")
             cout<<T<<"\n";
-        else if(color=="red")
+        if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m\n";
-        else if(color=="yellow")
-            cout<<"\033[33m"<<T<<"\033[0m\n";
-        else if(color=="green")
+        if(color=="yellow")
             cout<<"\033[32m"<<T<<"\033[0m\n";
-        else if(color=="teal")
+        if(color=="teal")
             cout<<"\033[36m"<<T<<"\033[0m\n";
-        else if(color=="blue")
+        if(color=="blue")
             cout<<"\033[34m"<<T<<"\033[0m\n";
-        else if(color=="purple")
+        if(color=="purple")
             cout<<"\033[35m"<<T<<"\033[0m\n";
-        else if(color=="white")
+        if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m\n";
-        else
-            error();
+        error;
     }
-    else if(i==false){
+    if(i==false){
         if(color=="none")
             cout<<T;
-        else if(color=="red")
+        if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m";
-        else if(color=="yellow")
+        if(color=="yellow")
             cout<<"\033[33m"<<T<<"\033[0m";
-        else if(color=="green")
+        if(color=="green")
             cout<<"\033[32m"<<T<<"\033[0m";
-        else if(color=="teal")
+        if(color=="teal")
             cout<<"\033[36m"<<T<<"\033[0m";
-        else if(color=="blue")
+        if(color=="blue")
             cout<<"\033[34m"<<T<<"\033[0m";
-        else if(color=="purple")
+        if(color=="purple")
             cout<<"\033[35m"<<T<<"\033[0m";
-        else if(color=="white")
+        if(color=="white")
             cout<<"\033[0m"<<T<<"\033[0m";
-        else
-            error();
+        error;
     }
-    else
-        error();
+    error;
 }
 
 void line(const char S[],int l,string color,bool i){
-    if(l<=0)
-        error();
-    else{
+    if(l>0){
         while(l>1){
             print(S,color,false);
             l--;
         }
         print(S,color,i);
     }
+    error;
 }
 
 void dash(const char T[]){
@@ -83,9 +77,7 @@ void dash(const char T[]){
 
 void boxout(const char T[],string bc,string tc,bool i){
     int l=strlen(T);
-    if(l <= 0)
-        error();
-    else{
+    if(l > 0){
         print("+",bc,false);
         line("-",l+2,bc,false);
         print("+",bc,true);
@@ -96,4 +88,5 @@ void boxout(const char T[],string bc,string tc,bool i){
         line("-",l+2,bc,false);
         print("+",bc,i);
     }
+    error;
 }

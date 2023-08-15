@@ -8,6 +8,8 @@
 
 参数解释：T[]为输出字符，color为输出字符的颜色，i为是否另起一行输出
 
+`color`的值可以为：“red“、“yellow“、”teal“、”blue“、”green“、”purple“、”white“以及”none“
+
 ## 示例
 
 `print("Hello World","yellow",true);`

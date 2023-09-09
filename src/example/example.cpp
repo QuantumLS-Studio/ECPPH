@@ -1,7 +1,7 @@
-#include "../ECPPH.h"
+#include "../head/ECPPH.h"
 
 int main(){
-    clear(0);
+    clear();
     line("/",5,"none",true);
     line("-",5,"red",true);
     line("\\",5,"yellow",true);

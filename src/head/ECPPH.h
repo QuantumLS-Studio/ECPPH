@@ -5,6 +5,11 @@
 #include <ctime>
 #include <chrono>
 #include <cstring>
+#include <cstdio>
+#include <ios>
+#include <string>
+#include <sys/types.h>
+#include "cc.h"
 using namespace std;
 
 int error(){
@@ -12,12 +17,9 @@ int error(){
     return 1;
 }
 
-void clear(int i){
-    if(i==0)
-        system("clear");
-    if(i==1)
-        system("CLS");
-    error;
+void clear(){
+    printf("\033[2J");
+    printf("\033[0,0");
 }
 
 void print(const char T[],string color,bool i){
@@ -26,6 +28,7 @@ void print(const char T[],string color,bool i){
             cout<<T<<"\n";
         if(color=="red")
             cout<<"\033[31m"<<T<<"\033[0m\n";
+            /*cout<<FRED<<T<<NONE<<endl;*/
         if(color=="yellow")
             cout<<"\033[32m"<<T<<"\033[0m\n";
         if(color=="teal")

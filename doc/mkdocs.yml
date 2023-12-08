@@ -1,0 +1,65 @@
+site_name: ECPPH Documents
+repo_url: https://github.com/QuantumLS-Studio/ECPPH
+repo_name: QuantumLS-Studio/ECPPH
+edit_uri: edit/main/docs/zh_CN
+copyright: Copyright &copy; 2022 - 2023 QuantumLS-Studio
+theme:
+  name: material
+  language: zh
+  features:
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - header.autohide
+    - navigation.footer
+  icon: 
+    repo: fontawesome/brands/git-alt
+    edit: material/pencil 
+    view: material/eye
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch
+        name: Dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Light mode
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/QuantumLS-Studio
+plugins: 
+  - search
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
+  - footnotes
+  - meta
+  - def_list
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - pymdownx.tilde

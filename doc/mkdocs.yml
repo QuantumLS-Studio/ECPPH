@@ -2,7 +2,7 @@ site_name: ECPPH Documents
 repo_url: https://github.com/QuantumLS-Studio/ECPPH
 repo_name: QuantumLS-Studio/ECPPH
 edit_uri: edit/main/docs/zh_CN
-copyright: Copyright &copy; 2022 - 2023 QuantumLS-Studio
+copyright: Copyright &copy; 2022 - 2024 QuantumLS-Studio
 theme:
   name: material
   language: zh

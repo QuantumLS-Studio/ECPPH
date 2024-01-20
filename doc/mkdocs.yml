@@ -1,8 +1,8 @@
 site_name: ECPPH Documents
 repo_url: https://github.com/QuantumLS-Studio/ECPPH
 repo_name: QuantumLS-Studio/ECPPH
-edit_uri: edit/main/docs/zh_CN
-copyright: Copyright &copy; 2022 - 2023 QuantumLS-Studio
+edit_uri: edit/main/doc/
+copyright: Copyright &copy; 2022 - 2024 QuantumLS-Studio
 theme:
   name: material
   language: zh
@@ -21,8 +21,8 @@ theme:
   palette:
     # Light mode
     - scheme: default
-      primary: blue
-      accent: light blue
+      primary: indigo
+      accent: blue
       toggle:
         icon: material/toggle-switch
         name: Dark mode

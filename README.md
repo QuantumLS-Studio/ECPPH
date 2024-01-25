@@ -4,4 +4,4 @@
 
 A head file to make C++ develop easy.
 
-For more information, please read texts in the "doc" dir.
+For more information, please read texts in the "doc" dir, or visit ``.

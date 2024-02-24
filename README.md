@@ -13,7 +13,7 @@ We use MIT Licence
 ```text
 MIT License
 
-Copyright (c) 2023 Quantum
+Copyright (c) 2023 QuantumLS-Studio
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
